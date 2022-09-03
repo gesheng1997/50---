@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.wrapper .content{
+    position: relative;
+    z-index: 1000;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30vh;
+}
+
+.wrapper .content .title{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.wrapper .content a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding:20px 50px 20px 50px;
+    border: 3px white solid;
+}
+
+.wrapper .first{
+    background-image: url(./resources/59003d0125f58.jpg);
+    background-position: -110px -100px;
+    width: 50vw;
+    height: 100vh;
+    transition: all 1s;
+}
+
+.wrapper .first .vail1{
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(167,0,255,.3);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .second{
+    background-image: url(./resources/59003cfe1ae33.jpg);
+    background-position: -960px -87px;
+    width: 50vw;
+    height: 100vh;
+    transition: all 1s;
+}
+
+.vail1 .button1 a:hover{
+    background-color: #77C369;
+    border:3px #77C369 solid;
+}
+
+.wrapper .second .vail2{
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255,0,10,.3);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vail2 .button2 a:hover{
+    background-color: #f96341;
+    border:3px #f96341 solid;
+}

@@ -1,0 +1,98 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #4682B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-content{
+    width: 380px;
+    height: 430px;
+    background-color: rgba(0,0,0,.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.wrapper-content .title{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.wrapper-content .login{
+    width: 77%;
+}
+
+.wrapper-content .login .username-title,.wrapper-content .login .password-title{
+    font-size:18px;
+    color: white;
+}
+
+.wrapper-content .login .username-title .uletter{
+    position: relative;
+    top: 35px;
+    transition: all 0.2s;
+}
+
+.wrapper-content .login .password-title .pletter{
+    position: relative;
+    top: 35px;
+    transition: all 0.2s;
+}
+
+.wrapper-content .login input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px white solid;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.login input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 3px #ADD8E6 solid;
+}
+
+.wrapper-content .login .submit{
+    width: 100%;
+    height: 50px;
+    display: block;
+    background-color: #ADD8E6;
+    border: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login .submit:focus{
+    outline: none;
+}
+
+.wrapper-content .login .register-wrapper{
+    color: white;
+}
+
+.wrapper-content .login .register-wrapper .register{
+    color: #ADD8E6;
+    text-decoration: none;
+}

@@ -1,0 +1,45 @@
+html{
+    overflow-y: hidden;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #765BED;
+}
+
+.search{
+    height: 60px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.search .text-bar{
+    width: 0px;
+    height: 26px;
+    font-size: 17px;
+    border: none;
+    padding: 11px 0px 13px 0px;
+    transition: all 0.2s ease-in;
+}
+/*170px*/
+.search .text-bar:focus{
+    border: none;
+    outline: none;
+}
+
+.search .search-button{
+    width: 50px;    
+    height: 50px;
+    font-size: 24px;
+    border: none;
+    background-color: white;
+}
+
+.search-button:focus{
+    border: none;
+    outline: none;
+}

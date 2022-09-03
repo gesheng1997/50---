@@ -1,0 +1,63 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Muli', sans-serif;
+}
+
+.wrapper{
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 0px 20px 0px 20px;
+}
+
+.wrapper .title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.wrapper .card{
+    width: 100%;
+    height: 40px;
+    border: 1px #9FA4A8 solid;
+    border-radius:10px;
+    margin-bottom: 20px;
+    padding:25px 30px 25px 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    transition: all 0.5s;
+}
+
+.active{
+    background-image: url(./未标题-1.png);
+    box-shadow: 0 3px 4px rgba(0,0,0,.2);
+}
+
+.card .question{
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question .icon{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.question .icon:focus{
+    outline: none;
+}
+
+.active-icon{
+    color: #9FA4A8;
+}

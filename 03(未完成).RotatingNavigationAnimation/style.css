@@ -1,0 +1,99 @@
+.background{
+    background-color: #333333;
+}
+
+.content-wrapper{
+    width: 100vw;
+    position: absolute;
+    z-index: 100;
+}
+
+.control{
+    display: flex;
+    width: 200px;
+    height: 100px;
+    background-color: #FF7979;
+    border-radius: 0 0 100px 100px;
+    position: fixed;
+    left: -100px;
+}
+
+.control .cross-wrapper{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cross-wrapper .cross{
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+}
+
+.control .stream-wrapper{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stream-wrapper .stream{
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+}
+
+.control i{
+    font-size: 25px;
+    color: white;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+.wrapper .title{
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #222222;
+}
+
+.wrapper .author{
+    color: #555555;
+    font-style: italic;
+    margin-top: 0px;
+    font-size: 13.2px;
+}
+
+.wrapper .first-paragraph{
+    font-size: 14px;
+    line-height: 25px;
+    color: #333333;
+}
+
+.wrapper .dog{
+    width: 100%;
+}
+
+.wrapper .second-paragraph{
+    font-size: 14px;
+    line-height: 25px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+/* @media (max-width:1010px){
+    .wrapper{
+        width: 70vw;
+        margin-top: 100px;
+        margin-left: 15vw;
+    }
+
+    .wrapper .dog{
+        width: 100%;
+    }
+} */

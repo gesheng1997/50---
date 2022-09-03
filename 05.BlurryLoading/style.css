@@ -1,0 +1,26 @@
+html{
+    overflow-y: hidden;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .background{
+    width: 100vw;
+    height: 100vh;
+    filter: blur(5vw);
+}
+
+.wrapper .process{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    color: white;
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .pic-wrapper{
+            width: 1475px;
+            margin: 90px auto;
+        }
+
+        .pic{
+            float: left;
+            width: 100px;   
+            height: 750px;
+            border-radius: 50px;
+            margin-left: 15px;
+            cursor: pointer;
+            pointer-events: auto;
+            transition-property: width;
+            transition-duration: 0.8s;
+            transition-timing-function: linear;
+        }
+
+        .pic img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .pic1{
+            background-image: url(../HTMLCode/eva/eva\ 1.7.png);
+        }
+        .pic2{
+            background-image: url(../HTMLCode/eva/eva\ 2.2.png);
+        }
+        .pic3{
+            background-image: url(../HTMLCode/eva/eva\ 1.3.png);
+        }
+        .pic4{
+            background-image: url(../HTMLCode/eva/eva\ 2.5.png);
+        }
+        .pic5{
+            background-image: url(../HTMLCode/eva/eva\ 2.7.png);
+        }
+
+        span{
+            position: relative;
+            display: block;
+            width: 500px;
+            color: antiquewhite;
+            font-size: 30px;
+            font-weight: bold;
+            top: 650px;
+            margin-left: 30px;
+            opacity: 0;
+            cursor: pointer;
+            transition-property: opacity;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="pic-wrapper">
+        <div class="pic pic1">
+            <span>Evagelion 1.0</span>
+        </div>
+        <div class="pic pic2">
+            <span>Evagelion 2.0</span>
+        </div>
+        <div class="pic pic3">
+            <span>Evagelion 3.0</span>
+        </div>
+        <div class="pic pic4">
+            <span>Evagelion 4.0</span>
+        </div>
+        <div class="pic pic5">
+            <span>Evagelion 5.0</span>
+        </div>
+    </div>
+
+    <script>
+        let temp = document.querySelector('.pic1');
+        temp.style.width = "1000px";
+        temp.children[0].style.opacity = "1";
+
+        document.body.onclick = function(event){
+            let target = event.target;
+            if(target.classList.contains('pic')){
+                temp.style.width = "100px";
+                temp.children[0].style.opacity = "0";
+
+                temp = target;
+
+                target.style.width = "1000px";
+                target.children[0].style.opacity = "1";
+            }
+        }
+    </script>
+</body>
+</html>
